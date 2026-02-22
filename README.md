@@ -1,75 +1,54 @@
 # Stevan Ledesma  
-## CS 499 Computer Science Capstone  
+## CS 499 – Computer Science Capstone ePortfolio  
 
-This repository contains my enhanced artifacts demonstrating growth in:
+This repository contains my final CS 499 capstone ePortfolio, showcasing enhanced artifacts in:
 
-- **Software Design and Engineering**
-- **Algorithms and Data Structures**
-- **Databases**
+- Software Design & Engineering  
+- Algorithms & Data Structures  
+- Database Development  
+
+---
+
+## 🌐 Live Portfolio Website
+View the deployed ePortfolio here:
+
+👉 https://sledesm9.github.io/cs499-eportfolio/
 
 ---
 
 ## 📂 Artifacts
 
 ### 1️⃣ Software Design – Animal Shelter (MongoDB)
+Demonstrates object-oriented design and modular database operations.
 
-This project demonstrates object-oriented design and modular database operations.
-
-**Enhancements include:**
-- Logging implementation  
-- Removal of hardcoded credentials  
-- Improved error handling  
-- Code documentation improvements  
-
-[View Software Design Artifact](Software_Design_AnimalShelter/)
+Enhancements:
+- Logging implementation
+- Removal of hardcoded credentials
+- Improved error handling
+- Structured documentation
 
 ---
 
 ### 2️⃣ Algorithms – Course Planner (C++)
+Demonstrates data structures and efficient searching.
 
-This program reads course data from a CSV file and allows efficient searching and sorting.
-
-**Enhancements include:**
-- Input validation improvements  
-- Optimized lookup using `std::map`  
-- Improved parsing logic  
-
-```cpp
-map<string, Course> courseMap;
-```
-
-[View Algorithms Artifact](Algorithms_CoursePlanner/)
+Enhancements:
+- Improved parsing logic
+- Input validation
+- Optimized lookup using `std::map`
 
 ---
 
 ### 3️⃣ Databases – SQLite Ticket Tracker
+Demonstrates practical database design and secure query execution.
 
-This project demonstrates practical database design and secure query execution.
-
-**Enhancements include:**
-- Schema constraints  
-- Parameterized queries  
-- Indexed fields  
-- Reporting queries  
-
-```python
-cursor.execute("INSERT INTO tickets VALUES (?, ?, ?)", values)
-```
-
-[View Database Artifact](Databases_SQLiteTicketTracker/)
+Enhancements:
+- Schema constraints
+- Parameterized queries
+- Indexed fields
+- Reporting queries
 
 ---
 
-## 🎥 Code Review
-
-You can view my informal code review here:
-
+## 🎥 Code Review Video
 https://youtu.be/K_BtlOpKeXc
-
----
-
-## 🌐 GitHub Pages Site
-
-This portfolio is deployed using GitHub Pages.
-👉 https://sledesm9.github.io/cs499-eportfolio/
-
