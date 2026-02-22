@@ -1,84 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stevan Ledesma – CS499 ePortfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    hr {
-      margin: 30px 0;
-    }
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    h1 { margin-bottom: 0; }
+    h2 { margin-top: 6px; font-weight: normal; color: #333; }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section { margin-top: 28px; }
+    .card { padding: 14px 16px; border: 1px solid #ddd; border-radius: 10px; margin-top: 10px; }
+    ul { margin-top: 8px; }
+    .small { color: #555; font-size: 0.95rem; }
   </style>
 </head>
 
 <body>
-
   <h1>Stevan Ledesma</h1>
   <h2>CS 499 Computer Science Capstone</h2>
 
   <p>
-    Welcome to my ePortfolio. This portfolio demonstrates growth in software design,
-    algorithms, databases, communication, and security.
+    Welcome to my ePortfolio. This portfolio includes my professional self-assessment, code review video,
+    original and enhanced artifacts, and narratives that explain my enhancements and how they align with course outcomes.
   </p>
 
-  <hr>
+  <hr />
 
-  <h3>Professional Self-Assessment</h3>
-  <p>
-    <a href="Stevan_Ledesma_Professional_Self_Assessment.docx">
-      View Professional Self-Assessment
-    </a>
-  </p>
-
-  <hr>
-
-  <h3>Artifacts</h3>
-  <ul>
-
-    <li>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter">
-        Software Design – Animal Shelter (MongoDB)
+  <div class="section">
+    <h3>Professional Self-Assessment</h3>
+    <div class="card">
+      <a href="Stevan_Ledesma_Professional_Self_Assessment.docx" target="_blank" rel="noopener">
+        View Professional Self-Assessment (DOCX)
       </a>
-    </li>
+    </div>
+  </div>
 
-    <li>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner">
-        Algorithms – Course Planner (C++)
+  <hr />
+
+  <div class="section">
+    <h3>Artifacts</h3>
+    <p class="small">
+      Tip: These links open the artifact folders in GitHub so your instructor can view everything without 404 errors.
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank" rel="noopener">
+          Software Design – Animal Shelter (MongoDB)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank" rel="noopener">
+          Algorithms – Course Planner (C++)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank" rel="noopener">
+          Databases – SQLite Ticket Tracker
+        </a>
+      </li>
+    </ul>
+
+    <div class="card">
+      <strong>Quick Downloads (if needed)</strong>
+      <ul>
+        <li>
+          SQLite DB Download:
+          <a href="https://raw.githubusercontent.com/sledesm9/cs499-eportfolio/main/Databases_SQLiteTicketTracker/tickets_enhanced.db" target="_blank" rel="noopener">
+            tickets_enhanced.db
+          </a>
+        </li>
+      </ul>
+      <p class="small">
+        Note: GitHub can’t “preview” .db files. Downloading is expected.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="section">
+    <h3>Code Review Video</h3>
+    <p class="small">
+      If this link fails, your YouTube video is still private or not saved as Unlisted/Public.
+      Go to YouTube Studio → set Visibility to <strong>Unlisted</strong> → click <strong>Save</strong>.
+    </p>
+
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=K_BtlOpKeXc" target="_blank" rel="noopener">
+        Watch Code Review Video (YouTube)
       </a>
-    </li>
-
-    <li>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker">
-        Databases – SQLite Ticket Tracker
-      </a>
-    </li>
-
-  </ul>
-
-  <hr>
-
-  <h3>Code Review</h3>
-  <p>
-    <a href="https://youtu.be/K_BtlOpKeXc" target="_blank">
-      Watch Code Review Video
-    </a>
-  </p>
+    </div>
+  </div>
 
 </body>
 </html>
