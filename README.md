@@ -71,3 +71,5 @@ https://youtu.be/K_BtlOpKeXc
 ## 🌐 GitHub Pages Site
 
 This portfolio is deployed using GitHub Pages.
+👉 https://sledesm9.github.io/cs499-eportfolio/
+
