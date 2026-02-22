@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Software Design – Animal Shelter (MongoDB)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      background-color: #f5f5f5;
-      color: #111;
       line-height: 1.6;
+      color: #111;
     }
 
-    h1 {
-      margin-bottom: 5px;
-      font-size: 36px;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
+    a { 
+      color: #007acc; 
+      text-decoration: none; 
       font-weight: 600;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      margin-top: 20px;
-      border-radius: 14px;
-      border: 1px solid #e6e6e6;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 8px 14px;
-      border-radius: 8px;
-      border: 1px solid #007acc;
-    }
-
-    .btn:hover {
-      background-color: #e6f2ff;
+    a:hover { 
+      text-decoration: underline; 
     }
 
     .back {
@@ -59,10 +28,38 @@
       margin-bottom: 20px;
     }
 
+    h1 {
+      font-size: 38px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 35px;
+      font-size: 26px;
+    }
+
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 14px;
+      padding: 28px;
+      margin: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      background: #fff;
+      max-width: 1000px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
     hr {
-      margin: 30px 0;
       border: none;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #e6e6e6;
+      margin: 30px 0;
     }
   </style>
 </head>
@@ -72,86 +69,81 @@
   <a class="back" href="index.html">← Back to Home</a>
 
   <h1>Software Design – Animal Shelter (MongoDB)</h1>
-  <p>This page includes my project overview, enhancement explanation, and full narrative reflection.</p>
 
   <div class="card">
-    <h2>Project Overview</h2>
+
+    <h2>Artifact Description</h2>
     <p>
-      This artifact began as a CRUD module connected to a MongoDB database
-      for managing animal rescue records. The original implementation focused
-      primarily on functionality.
+      The chosen artifact is the AnimalShelter Python CRUD module, which handles database 
+      tasks for an animal rescue collection stored in MongoDB. I originally developed this 
+      project in CS 340 Module Four. The system allows users to create, retrieve, update, 
+      and delete animal records. It also includes search routines for water rescue dogs, 
+      mountain or wilderness rescue dogs, and dogs trained for disaster or individual searches.
     </p>
 
     <p>
-      For my enhancement, I improved code organization, removed hardcoded credentials,
-      strengthened error handling, and implemented structured logging instead of
-      print statements. These changes improved maintainability, professionalism,
-      and security.
+      The code is organized into a reusable class called <strong>AnimalShelter</strong>. 
+      This design allows other projects or dashboards to import and use the module 
+      without modification.
     </p>
 
-    <a href="#narrative" class="btn">View Full Narrative</a>
-  </div>
-
-  <div class="card">
-    <h2>Original and Enhanced Files</h2>
+    <h2>Justification for Inclusion and Enhancements</h2>
 
     <p>
-      Both original and enhanced versions of this artifact are available below:
+      This artifact serves as evidence of my software design and engineering abilities. 
+      Specific components that demonstrate my skills include:
     </p>
 
     <ul>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Software_Design_AnimalShelter/CRUD_Python_Module%20original.py" target="_blank">
-          Original Version
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Software_Design_AnimalShelter/CRUD_Python_Module%20Edited.py" target="_blank">
-          Enhanced Version
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank">
-          View Full Folder
-        </a>
-      </li>
+      <li><strong>Object-Oriented Design:</strong> The AnimalShelter class encapsulates database operations with clearly defined method responsibilities.</li>
+      <li><strong>Database Interaction:</strong> The system connects to MongoDB and retrieves animal records. Users can filter results by animal type, age, and breed.</li>
+      <li><strong>Error Handling:</strong> The system uses try-except blocks to ensure the program does not crash unexpectedly during execution.</li>
+      <li><strong>Dashboard Integration:</strong> The module supports Dash/Jupyter Dash integration, allowing real-time data visualization.</li>
     </ul>
-  </div>
 
-  <hr>
-
-  <div class="card">
-    <h2 id="narrative">Narrative Reflection</h2>
-
-    <h3>Brief Description</h3>
     <p>
-      This artifact was originally created in CS 340 to demonstrate MongoDB
-      integration with Python. The goal was to design a reusable class
-      capable of performing CRUD operations on an animal rescue database.
+      I implemented several key updates to enhance the project:
     </p>
 
-    <h3>Justification for Inclusion</h3>
-    <p>
-      I selected this artifact because it demonstrates software engineering
-      principles such as modular design, database connectivity, and backend
-      system organization. The enhancement process allowed me to strengthen
-      code structure and improve security practices by removing sensitive
-      information from the source code and implementing logging.
-    </p>
+    <ul>
+      <li>Replaced all print statements with Python’s logging module to improve traceability.</li>
+      <li>Added timestamped log records to assist with system maintenance and debugging.</li>
+      <li>Removed hardcoded credentials to strengthen security.</li>
+      <li>Added a README file explaining system design, installation, and usage instructions.</li>
+    </ul>
 
-    <h3>Reflection on Enhancement</h3>
+    <h2>Course Outcomes</h2>
+
+    <ul>
+      <li><strong>Software Engineering & Design:</strong> Implemented logging and improved documentation to align the project with professional coding practices.</li>
+      <li><strong>Security Mindset:</strong> Removing hardcoded credentials reduces vulnerabilities and protects sensitive information.</li>
+      <li><strong>Computing Solutions Design:</strong> Organized the class structure so each method has a clear responsibility, improving readability and maintainability.</li>
+      <li><strong>Professional Communication:</strong> The README provides structured documentation explaining module usage and architecture.</li>
+    </ul>
+
+    <h2>Reflection</h2>
+
     <p>
-      During enhancement, I realized that functional code is not the same as
-      professional code. Refactoring helped me focus on maintainability,
-      readability, and secure design decisions. One challenge was ensuring
-      that restructuring the code did not break existing database operations.
-      This process strengthened my understanding of software design trade-offs
-      and secure programming practices.
+      One of the most important improvements was enhancing maintainability through clear 
+      commenting and documentation. Descriptive comments were added to each method 
+      so that future developers — or myself — can easily understand its purpose and usage.
     </p>
 
     <p>
-      This artifact supports course outcomes related to software engineering,
-      professional communication, computing best practices, and security mindset.
+      I also improved exception handling to clarify expected behavior under different 
+      situations and error cases. This strengthened reliability while maintaining simplicity.
+    </p>
+
+    <p>
+      A key lesson I learned is that small improvements — such as improving documentation 
+      and logging — can significantly elevate the professionalism of a project without 
+      changing its core functionality. 
+    </p>
+
+    <p>
+      One challenge was ensuring comments remained accurate, concise, and meaningful 
+      without cluttering the code. Overall, these enhancements made the artifact more 
+      polished, maintainable, and reflective of my growth as a software developer.
     </p>
 
   </div>
