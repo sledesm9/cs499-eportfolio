@@ -4,22 +4,29 @@
   <meta charset="UTF-8">
   <title>Software Design – Animal Shelter (MongoDB)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
       background-color: #f5f5f5;
-      color: #222;
+      color: #111;
       line-height: 1.6;
     }
 
     h1 {
       margin-bottom: 5px;
+      font-size: 36px;
     }
 
     a {
-      color: #0066cc;
+      color: #007acc;
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
@@ -28,27 +35,34 @@
 
     .card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    .button {
+    .btn {
       display: inline-block;
-      padding: 10px 15px;
-      margin-top: 10px;
-      border: 1px solid #0066cc;
-      border-radius: 6px;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #007acc;
     }
 
-    .button:hover {
+    .btn:hover {
       background-color: #e6f2ff;
     }
 
     .back {
-      margin-bottom: 20px;
       display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
@@ -58,92 +72,88 @@
   <a class="back" href="index.html">← Back to Home</a>
 
   <h1>Software Design – Animal Shelter (MongoDB)</h1>
-  <p>This page presents my narrative reflection along with direct access to the original and enhanced source code.</p>
+  <p>This page includes my project overview, enhancement explanation, and full narrative reflection.</p>
 
   <div class="card">
     <h2>Project Overview</h2>
     <p>
-      This artifact began as a CRUD module connected to a MongoDB database for managing animal rescue records.
-      The original implementation focused primarily on functionality. For my enhancement, I improved the
-      organization of the class structure, removed hardcoded credentials, strengthened error handling,
-      and implemented structured logging instead of print statements.
-    </p>
-    <p>
-      These improvements increased maintainability, professionalism, and security while preparing the system
-      for real-world scalability. The module also integrates with a Dash dashboard to allow interactive
-      filtering and visualization of rescue data.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Narrative Reflection</h2>
-
-    <h3>Brief Description</h3>
-    <p>
-      This artifact was originally developed in CS 340 as part of a MongoDB integration project.
-      It was designed to perform Create, Read, Update, and Delete operations on an animal rescue database.
-      The goal was to connect Python to MongoDB and allow structured data interaction.
+      This artifact began as a CRUD module connected to a MongoDB database
+      for managing animal rescue records. The original implementation focused
+      primarily on functionality.
     </p>
 
-    <h3>Justification for Inclusion</h3>
     <p>
-      I selected this artifact because it demonstrates core software engineering principles such as modular
-      design, database integration, and backend development. The enhancement process allowed me to apply
-      stronger structural organization and implement better security practices.
-      By improving error handling and removing hardcoded credentials, I demonstrated growth in writing
-      production-level code rather than classroom-only solutions.
+      For my enhancement, I improved code organization, removed hardcoded credentials,
+      strengthened error handling, and implemented structured logging instead of
+      print statements. These changes improved maintainability, professionalism,
+      and security.
     </p>
 
-    <h3>Reflection on the Enhancement Process</h3>
-    <p>
-      During enhancement, I realized that while my original implementation worked functionally,
-      it lacked professional structure and security awareness. Refactoring the code forced me to think
-      critically about separation of responsibilities, logging practices, and secure credential management.
-      One challenge I faced was restructuring without breaking database connectivity.
-      This experience strengthened my understanding of maintainability and secure software architecture.
-    </p>
-    <p>
-      This enhancement supports multiple course outcomes including professional communication,
-      computing best practices, secure coding principles, and the ability to evaluate and improve
-      an existing computing solution.
-    </p>
+    <a href="#narrative" class="btn">View Full Narrative</a>
   </div>
 
   <div class="card">
     <h2>Original and Enhanced Files</h2>
 
     <p>
-      Both the original and enhanced versions of this artifact are available in the GitHub repository below:
-    </p>
-
-    <p>
-      <a class="button" href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank">
-        Open Software Design Folder on GitHub
-      </a>
+      Both original and enhanced versions of this artifact are available below:
     </p>
 
     <ul>
       <li>
-        Original Version:
         <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Software_Design_AnimalShelter/CRUD_Python_Module%20original.py" target="_blank">
-          CRUD_Python_Module original.py
+          Original Version
         </a>
       </li>
-
       <li>
-        Enhanced Version:
         <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Software_Design_AnimalShelter/CRUD_Python_Module%20Edited.py" target="_blank">
-          CRUD_Python_Module Edited.py
+          Enhanced Version
         </a>
       </li>
-
       <li>
-        Enhanced Dashboard:
-        <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Software_Design_AnimalShelter/Edited%20Dashboard.ipynb" target="_blank">
-          Edited Dashboard.ipynb
+        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank">
+          View Full Folder
         </a>
       </li>
     </ul>
+  </div>
+
+  <hr>
+
+  <div class="card">
+    <h2 id="narrative">Narrative Reflection</h2>
+
+    <h3>Brief Description</h3>
+    <p>
+      This artifact was originally created in CS 340 to demonstrate MongoDB
+      integration with Python. The goal was to design a reusable class
+      capable of performing CRUD operations on an animal rescue database.
+    </p>
+
+    <h3>Justification for Inclusion</h3>
+    <p>
+      I selected this artifact because it demonstrates software engineering
+      principles such as modular design, database connectivity, and backend
+      system organization. The enhancement process allowed me to strengthen
+      code structure and improve security practices by removing sensitive
+      information from the source code and implementing logging.
+    </p>
+
+    <h3>Reflection on Enhancement</h3>
+    <p>
+      During enhancement, I realized that functional code is not the same as
+      professional code. Refactoring helped me focus on maintainability,
+      readability, and secure design decisions. One challenge was ensuring
+      that restructuring the code did not break existing database operations.
+      This process strengthened my understanding of software design trade-offs
+      and secure programming practices.
+    </p>
+
+    <p>
+      This artifact supports course outcomes related to software engineering,
+      professional communication, computing best practices, and security mindset.
+    </p>
+
   </div>
 
 </body>
