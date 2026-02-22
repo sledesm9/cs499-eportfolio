@@ -10,49 +10,53 @@
       font-family: Arial, sans-serif;
       margin: 40px;
       line-height: 1.6;
-      background-color: #f5f5f5;
+      color: #111;
     }
 
     h1 {
+      font-size: 42px;
       margin-bottom: 5px;
     }
 
     h2 {
-      margin-top: 0;
-      color: #444;
-      font-weight: normal;
-    }
-
-    h3 {
       margin-top: 40px;
+      font-size: 28px;
     }
 
-    .section {
-      margin-top: 30px;
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
     }
 
     .card {
-      background: white;
-      padding: 20px;
-      margin-top: 15px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+      border: 1px solid #e6e6e6;
+      border-radius: 14px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      background: #fff;
     }
 
     a {
-      color: #0066cc;
+      color: #007acc;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
     hr {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      border: none;
+      border-top: 1px solid #e6e6e6;
+      margin: 40px 0;
     }
   </style>
 </head>
@@ -60,103 +64,98 @@
 <body>
 
   <h1>Stevan Ledesma</h1>
-  <h2>CS 499 Computer Science Capstone</h2>
+  <div class="subtitle">CS 499 Computer Science Capstone</div>
 
   <p>
-    Welcome to my ePortfolio. This portfolio highlights my growth throughout the
-    Computer Science program and demonstrates enhancements in software design,
+    Welcome to my professional ePortfolio. This portfolio highlights my growth throughout
+    the Computer Science program and demonstrates enhancements in software design,
     algorithms and data structures, and database development.
   </p>
 
   <hr>
 
-  <!-- Professional Self Assessment -->
-  <div class="section">
-    <h3>Professional Self-Assessment</h3>
-    <div class="card">
-      <p>
-        In this self-assessment, I reflect on my academic journey, technical
-        development, collaboration experiences, and how these projects have
-        prepared me for a career in software development.
-      </p>
-      <a href="Stevan_Ledesma_Professional_Self_Assessment.docx" target="_blank">
-        View Professional Self-Assessment
-      </a>
-    </div>
+  <!-- Professional Self-Assessment -->
+  <h2>Professional Self-Assessment</h2>
+
+  <div class="card">
+    <p>
+      In this self-assessment, I reflect on my academic journey, technical development,
+      collaboration experiences, and how my coursework and artifact enhancements
+      have prepared me for a career in software development.
+    </p>
+
+    <a class="btn" href="Stevan_Ledesma_Professional_Self_Assessment.docx" target="_blank">
+      View Professional Self-Assessment
+    </a>
   </div>
 
   <hr>
 
-  <!-- Artifacts -->
-  <div class="section">
-    <h3>Artifacts</h3>
+  <!-- Artifacts Section -->
+  <h2>Artifacts</h2>
 
-    <!-- Software Design -->
-    <div class="card">
-      <h4>Software Design – Animal Shelter (MongoDB)</h4>
-      <p>
-        This project began as a simple CRUD module connected to a MongoDB database
-        for managing animal rescue records. I enhanced the structure by organizing
-        responsibilities more clearly within the class, improving error handling,
-        removing hardcoded credentials, and replacing print statements with Python’s
-        logging module. These changes improved maintainability, security, and overall
-        professionalism. The module also integrates with a Dash dashboard to allow
-        users to visualize and filter data in real time.
-      </p>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank">
-        View Software Design Artifact
-      </a>
-    </div>
+  <!-- Software Design -->
+  <div class="card">
+    <h3>Software Design – Animal Shelter (MongoDB)</h3>
+    <p>
+      This project began as a CRUD module connected to a MongoDB database for managing
+      animal rescue records. I enhanced the structure by organizing responsibilities more
+      clearly within the class, improving error handling, removing hardcoded credentials,
+      and replacing print statements with structured logging.
+      These changes improved maintainability, security, and overall professionalism.
+    </p>
 
-    <!-- Algorithms -->
-    <div class="card">
-      <h4>Algorithms & Data Structures – Course Planner (C++)</h4>
-      <p>
-        The Course Planner application reads course information from a CSV file
-        and allows users to search for courses and view prerequisites. I enhanced
-        this project by refining parsing logic, improving input validation, and
-        using a map data structure to automatically maintain alphabetical order.
-        These updates improved search efficiency and reliability while making
-        the code easier to understand and maintain.
-      </p>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank">
-        View Algorithms Artifact
-      </a>
-    </div>
+    <a class="btn" href="software-design.html">
+      View Software Design Artifact
+    </a>
+  </div>
 
-    <!-- Databases -->
-    <div class="card">
-      <h4>Databases – SQLite Ticket Tracker</h4>
-      <p>
-        This artifact is a support ticket tracking system built with Python and
-        SQLite. I enhanced the database schema by adding constraints, indexed
-        fields, and parameterized queries to protect data integrity and improve
-        performance. I also implemented reporting queries so the system can provide
-        meaningful summaries rather than just storing records. These improvements
-        reflect practical database design and secure data handling practices.
-      </p>
-      <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank">
-        View Database Artifact
-      </a>
-    </div>
+  <!-- Algorithms -->
+  <div class="card">
+    <h3>Algorithms & Data Structures – Course Planner (C++)</h3>
+    <p>
+      The Course Planner application reads course information from a CSV file and allows
+      users to search for courses and view prerequisites. I enhanced this project by refining
+      parsing logic, improving input validation, and implementing a map data structure to
+      automatically maintain alphabetical order.
+      These updates improved efficiency, readability, and reliability.
+    </p>
 
+    <a class="btn" href="algorithms.html">
+      View Algorithms Artifact
+    </a>
+  </div>
+
+  <!-- Databases -->
+  <div class="card">
+    <h3>Databases – SQLite Ticket Tracker</h3>
+    <p>
+      This artifact is a support ticket tracking system built with Python and SQLite.
+      I enhanced the database schema by adding constraints, indexed fields, and
+      parameterized queries to protect data integrity and improve performance.
+      I also implemented reporting queries to generate meaningful summaries.
+    </p>
+
+    <a class="btn" href="databases.html">
+      View Database Artifact
+    </a>
   </div>
 
   <hr>
 
-  <!-- Code Review -->
-  <div class="section">
-    <h3>Code Review Video</h3>
-    <div class="card">
-      <p>
-        This video provides a walkthrough of the original artifacts, discusses
-        areas for improvement, and explains how the enhancements were implemented
-        across software design, algorithms, and database systems.
-      </p>
-      <a href="https://www.youtube.com/watch?v=K_BtlOpKeXc" target="_blank">
-        Watch Code Review Video
-      </a>
-    </div>
+  <!-- Code Review Video -->
+  <h2>Code Review Video</h2>
+
+  <div class="card">
+    <p>
+      This video provides a walkthrough of the original artifacts, discusses areas
+      for improvement, and explains how the enhancements were implemented across
+      software design, algorithms, and database systems.
+    </p>
+
+    <a class="btn" href="https://youtu.be/K_BtlOpKeXc" target="_blank">
+      Watch Code Review Video
+    </a>
   </div>
 
 </body>
