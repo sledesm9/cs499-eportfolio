@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Databases – SQLite Ticket Tracker (CS 499)</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,9 +12,12 @@
       line-height: 1.6;
       color: #111;
     }
+
     a { color: #007acc; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     .back { margin-bottom: 18px; display: inline-block; }
+
     h1 { font-size: 40px; margin: 0 0 10px; }
     .subtitle { font-size: 18px; margin: 0 0 28px; color: #333; }
 
@@ -26,15 +30,9 @@
       background: #fff;
       max-width: 980px;
     }
-    .card h2 {
-      margin-top: 0;
-      font-size: 28px;
-    }
-    .card h3 {
-      margin-bottom: 8px;
-      font-size: 20px;
-    }
-    .muted { color: #444; }
+
+    .card h2 { margin-top: 0; font-size: 28px; }
+    .card h3 { margin-bottom: 8px; font-size: 20px; }
 
     .btns {
       display: flex;
@@ -42,6 +40,7 @@
       gap: 10px;
       margin-top: 16px;
     }
+
     .btn {
       display: inline-block;
       padding: 10px 14px;
@@ -50,10 +49,13 @@
       background: #fafafa;
       font-weight: 600;
     }
+
     .btn:hover { background: #f2f2f2; }
 
     code { background: #f7f7f7; padding: 2px 6px; border-radius: 6px; }
+
     hr { border: none; border-top: 1px solid #e6e6e6; margin: 26px 0; }
+
     .note { font-size: 14px; color: #444; }
   </style>
 </head>
@@ -67,41 +69,46 @@
     This page includes my narrative reflection and access to the original and enhanced versions of my SQLite Ticket Tracker artifact.
   </p>
 
-  <!-- Overview -->
+  <!-- Project Overview -->
   <div class="card">
     <h2>Project Overview</h2>
+
     <p>
-      This artifact is a small support ticket tracking system built with <strong>Python</strong> and <strong>SQLite</strong>.
-      The original version stored tickets in a basic table and supported simple create/read operations.
+      This artifact is a support ticket tracking system built using <strong>Python</strong> and <strong>SQLite</strong>.
+      The original version stored tickets in a basic table structure and supported simple create and read operations.
     </p>
+
     <p>
-      For the enhancement, I focused on making the database layer more reliable and “real-world” by improving
+      For the enhancement, I aligned the system more closely with real-world database design practices by improving
       <strong>data integrity</strong>, <strong>query safety</strong>, and <strong>performance</strong>.
-      I updated the schema with constraints, added indexing for faster lookups, and used parameterized queries
-      to reduce the risk of SQL injection. I also added reporting queries so the system can generate meaningful summaries
-      instead of only storing data.
+      I strengthened the schema with constraints, added indexing for faster lookups, and implemented parameterized
+      queries to mitigate SQL injection risk. I also added reporting queries so the system can generate meaningful summaries
+      instead of simply storing raw records.
     </p>
 
     <div class="btns">
-      <!-- Folder link -->
-      <a class="btn" href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank" rel="noopener">
+      <a class="btn"
+         href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker"
+         target="_blank" rel="noopener">
         Open Folder on GitHub
       </a>
 
-      <!-- Enhanced Python file (viewer) -->
-      <a class="btn" href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Databases_SQLiteTicketTracker/ticket_resolution_db.py" target="_blank" rel="noopener">
+      <a class="btn"
+         href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Databases_SQLiteTicketTracker/ticket_resolution_db.py"
+         target="_blank" rel="noopener">
         View Enhanced Code (Python)
       </a>
 
-      <!-- Enhanced DB file (downloads if clicked, unavoidable for .db) -->
-      <a class="btn" href="https://github.com/sledesm9/cs499-eportfolio/raw/main/Databases_SQLiteTicketTracker/tickets_enhanced.db" target="_blank" rel="noopener">
+      <a class="btn"
+         href="https://github.com/sledesm9/cs499-eportfolio/raw/main/Databases_SQLiteTicketTracker/tickets_enhanced.db"
+         target="_blank" rel="noopener">
         Download Enhanced Database (.db)
       </a>
     </div>
 
     <p class="note">
-      Note: SQLite <code>.db</code> files can’t be previewed directly in the browser the same way code can, so the database file is provided as a download.
-      The schema and queries are shown in the enhanced Python code above.
+      SQLite <code>.db</code> files cannot be previewed directly in the browser.
+      The database schema and queries are demonstrated in the enhanced Python file above.
     </p>
   </div>
 
@@ -111,44 +118,54 @@
 
     <h3>Brief Description</h3>
     <p>
-      This artifact was created as a ticket tracking system to store, update, and retrieve support tickets using SQLite.
-      It demonstrates database design fundamentals, query construction, and handling structured data in an application.
+      This artifact was created as a ticket tracking system designed to store, update, and retrieve support tickets using SQLite.
+      It demonstrates database schema design, structured queries, and integrating persistent storage into an application layer.
     </p>
 
     <h3>Justification for Inclusion</h3>
     <p>
-      I included this artifact because it shows practical database skills that translate directly into real software development.
-      The enhanced version demonstrates stronger database design through constraints, indexing, and cleaner query structure.
-      These improvements make the system more reliable, more secure, and easier to maintain.
+      I selected this artifact because it demonstrates practical database implementation skills that directly translate
+      into professional software development. The enhanced version reflects stronger database architecture,
+      better performance optimization, and improved security awareness.
     </p>
 
     <h3>Enhancements and Skills Demonstrated</h3>
     <ul>
-      <li><strong>Improved schema design:</strong> added constraints to protect data integrity and prevent invalid records.</li>
-      <li><strong>Performance:</strong> added indexes to improve query speed for common filters and lookups.</li>
-      <li><strong>Security mindset:</strong> used parameterized queries to reduce SQL injection risk.</li>
-      <li><strong>Reporting/analytics:</strong> added queries that summarize ticket volume, categories, and resolution trends.</li>
-      <li><strong>Code quality:</strong> organized database functions for clearer reuse and better maintainability.</li>
+      <li><strong>Improved schema design:</strong> Added constraints to protect data integrity and prevent invalid records.</li>
+      <li><strong>Performance optimization:</strong> Added indexes to improve query efficiency for frequent lookups.</li>
+      <li><strong>Security mindset:</strong> Used parameterized queries to mitigate SQL injection vulnerabilities.</li>
+      <li><strong>Reporting and analytics:</strong> Implemented summary queries to analyze ticket trends and categories.</li>
+      <li><strong>Code organization:</strong> Structured reusable database functions for maintainability.</li>
     </ul>
 
     <h3>Reflection on the Process</h3>
     <p>
-      The biggest challenge was balancing simplicity with realism. SQLite is lightweight, but database design decisions still matter.
-      By tightening the schema, adding indexes, and using safer query patterns, I learned how small improvements can make a system
-      significantly more dependable. This also helped me think more like a developer who expects real user input and long-term maintenance,
-      not just a “working demo.”
+      The most valuable lesson from this enhancement was understanding how small database design decisions can significantly
+      impact long-term reliability and performance. By tightening schema constraints, adding indexes, and using safer query patterns,
+      I developed a stronger appreciation for defensive programming and scalable database practices.
+      This process strengthened my ability to think beyond functionality and consider long-term maintainability and security.
     </p>
+
+    <h3>Course Outcome Alignment</h3>
+    <ul>
+      <li><strong>Design and evaluate computing solutions:</strong> Improved schema design and indexing required evaluating trade-offs between simplicity and efficiency.</li>
+      <li><strong>Use well-founded techniques and tools:</strong> Applied industry-standard database practices including indexing and secure query handling.</li>
+      <li><strong>Develop a security mindset:</strong> Implemented parameterized queries and schema constraints to protect against vulnerabilities.</li>
+      <li><strong>Professional communication:</strong> Structured documentation and code organization to clearly communicate design decisions.</li>
+    </ul>
 
     <hr/>
 
-    <h3>Optional: View the Original Artifact Files</h3>
-    
+    <h3>Original and Enhanced Files</h3>
+
     <div class="btns">
-      <!-- If you add an original file, change the link below to match -->
-      <a class="btn" href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank" rel="noopener">
+      <a class="btn"
+         href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker"
+         target="_blank" rel="noopener">
         View Files (Original + Enhanced)
       </a>
     </div>
+
   </div>
 
 </body>
