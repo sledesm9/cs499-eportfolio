@@ -4,51 +4,59 @@
   <meta charset="UTF-8">
   <title>Algorithms & Data Structures – Course Planner (C++)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
       background-color: #f5f5f5;
-      color: #222;
+      color: #111;
       line-height: 1.6;
     }
 
     h1 {
       margin-bottom: 5px;
+      font-size: 36px;
     }
 
     a {
-      color: #0066cc;
+      color: #007acc;
       text-decoration: none;
+      font-weight: 600;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
 
     .card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    .button {
+    .btn {
       display: inline-block;
-      padding: 10px 15px;
-      margin-top: 10px;
-      border: 1px solid #0066cc;
-      border-radius: 6px;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #007acc;
     }
 
-    .button:hover {
-      background-color: #e6f2ff;
-    }
+    .btn:hover { background-color: #e6f2ff; }
 
     .back {
-      margin-bottom: 20px;
       display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
@@ -58,92 +66,91 @@
   <a class="back" href="index.html">← Back to Home</a>
 
   <h1>Algorithms & Data Structures – Course Planner (C++)</h1>
-  <p>This page includes my narrative reflection and access to the original and enhanced versions of the Course Planner project.</p>
+  <p>This page includes my project overview, enhancement explanation, and full narrative reflection.</p>
 
   <div class="card">
     <h2>Project Overview</h2>
     <p>
-      The Course Planner application was originally designed to read course data from a CSV file
-      and allow users to search for courses and view prerequisites.
-      The original version relied on basic parsing and standard data handling.
-    </p>
-    <p>
-      For the enhancement, I improved parsing reliability, added stronger input validation,
-      and implemented a <strong>map data structure</strong> to automatically maintain alphabetical
-      order of courses. These changes improved search efficiency, readability, and overall maintainability.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Narrative Reflection</h2>
-
-    <h3>Brief Description</h3>
-    <p>
-      This artifact was originally developed in CS 260 as a demonstration of data structures
-      and algorithm implementation in C++. The goal was to build a system that could store,
-      organize, and retrieve course information efficiently.
+      The Course Planner application reads course data from a CSV file and allows users
+      to search for courses and view prerequisites. The original version worked, but it
+      relied on basic parsing and did not emphasize efficiency or stronger validation.
     </p>
 
-    <h3>Justification for Inclusion</h3>
     <p>
-      I selected this artifact because it highlights my understanding of algorithmic thinking
-      and data structure selection. The enhancement process allowed me to move from a
-      functional but basic implementation to a more structured and efficient design.
-      By implementing a map data structure, I demonstrated knowledge of associative containers
-      and improved time complexity for searching and organizing records.
+      For the enhancement, I improved input validation, refined CSV parsing, and used a
+      <strong>map data structure</strong> to keep courses automatically sorted alphabetically.
+      These changes improved search efficiency, reduced unnecessary processing, and made the
+      code easier to maintain.
     </p>
 
-    <h3>Reflection on the Enhancement Process</h3>
-    <p>
-      While enhancing this project, I learned the importance of selecting the correct
-      data structure based on the problem requirements.
-      My original approach worked, but it did not optimize search efficiency or ensure
-      consistent ordering of results. Refactoring the code required careful restructuring
-      to preserve functionality while improving algorithmic performance.
-    </p>
-    <p>
-      One challenge was ensuring accurate CSV parsing and handling invalid input gracefully.
-      This experience strengthened my understanding of defensive programming and
-      efficient algorithm design. The enhancement supports course outcomes related to
-      computing solution evaluation, algorithmic trade-offs, and professional code organization.
-    </p>
+    <a href="#narrative" class="btn">View Full Narrative</a>
   </div>
 
   <div class="card">
     <h2>Original and Enhanced Files</h2>
 
-    <p>
-      Both the original and enhanced versions of this artifact are available in the GitHub repository below:
-    </p>
-
-    <p>
-      <a class="button" href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank">
-        Open Algorithms Folder on GitHub
-      </a>
-    </p>
+    <p>Both original and enhanced versions of this artifact are available below:</p>
 
     <ul>
       <li>
-        Original Version:
         <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Algorithms_CoursePlanner/original%20course%20planner.cpp" target="_blank">
-          original course planner.cpp
+          Original Version (C++)
         </a>
       </li>
-
       <li>
-        Enhanced Version:
         <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Algorithms_CoursePlanner/edited%20Course%20planner.cpp" target="_blank">
-          edited Course planner.cpp
+          Enhanced Version (C++)
         </a>
       </li>
-
       <li>
-        Sample Data File:
         <a href="https://github.com/sledesm9/cs499-eportfolio/blob/main/Algorithms_CoursePlanner/courses.csv" target="_blank">
-          courses.csv
+          Sample Data (courses.csv)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank">
+          View Full Folder
         </a>
       </li>
     </ul>
+  </div>
+
+  <hr>
+
+  <div class="card">
+    <h2 id="narrative">Narrative Reflection</h2>
+
+    <h3>Brief Description</h3>
+    <p>
+      This artifact was originally created in CS 260 to demonstrate how data structures and
+      algorithms can be used to store, organize, and retrieve structured information.
+      The Course Planner loads course records and allows the user to search and display them
+      along with prerequisite relationships.
+    </p>
+
+    <h3>Justification for Inclusion</h3>
+    <p>
+      I selected this artifact because it clearly demonstrates algorithmic thinking and data
+      structure selection. Enhancing this project gave me the opportunity to improve efficiency,
+      strengthen reliability, and write cleaner code while still meeting functional requirements.
+      Using a map structure helped maintain sorting automatically and improved lookups compared to
+      a less structured approach.
+    </p>
+
+    <h3>Reflection on Enhancement</h3>
+    <p>
+      While improving this project, I learned how much data structure choice affects overall program
+      performance and maintainability. The biggest challenge was refining parsing logic without breaking
+      functionality and making sure invalid inputs were handled safely. This enhancement reinforced the
+      importance of defensive programming, trade-offs between simplicity and efficiency, and writing
+      code that can scale with larger datasets.
+    </p>
+
+    <p>
+      This artifact supports course outcomes related to algorithmic principles, evaluating computing
+      solutions, professional communication, and building more reliable and efficient programs.
+    </p>
+
   </div>
 
 </body>
