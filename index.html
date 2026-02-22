@@ -1,99 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stevan Ledesma – CS499 ePortfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1 { margin-bottom: 0; }
-    h2 { margin-top: 6px; font-weight: normal; color: #333; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .section { margin-top: 28px; }
-    .card { padding: 14px 16px; border: 1px solid #ddd; border-radius: 10px; margin-top: 10px; }
-    ul { margin-top: 8px; }
-    .small { color: #555; font-size: 0.95rem; }
-  </style>
-</head>
+<div class="section">
+  <h3>Artifacts</h3>
 
-<body>
-  <h1>Stevan Ledesma</h1>
-  <h2>CS 499 Computer Science Capstone</h2>
-
-  <p>
-    Welcome to my ePortfolio. This portfolio includes my professional self-assessment, code review video,
-    original and enhanced artifacts, and narratives that explain my enhancements and how they align with course outcomes.
-  </p>
-
-  <hr />
-
-  <div class="section">
-    <h3>Professional Self-Assessment</h3>
-    <div class="card">
-      <a href="Stevan_Ledesma_Professional_Self_Assessment.docx" target="_blank" rel="noopener">
-        View Professional Self-Assessment (DOCX)
-      </a>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="section">
-    <h3>Artifacts</h3>
-    <p class="small">
-      Tip: These links open the artifact folders in GitHub so your instructor can view everything without 404 errors.
+  <!-- Software Design -->
+  <div class="card">
+    <h4>Software Design – Animal Shelter (MongoDB)</h4>
+    <p>
+      This project began as a basic CRUD module connected to a MongoDB database.
+      I enhanced it by reorganizing the code structure, improving error handling,
+      and integrating it with an interactive Dash dashboard. The result is a more
+      modular, readable, and user-friendly system that allows animal rescue staff
+      to filter and explore data efficiently.
     </p>
-
-    <ul>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank" rel="noopener">
-          Software Design – Animal Shelter (MongoDB)
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank" rel="noopener">
-          Algorithms – Course Planner (C++)
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank" rel="noopener">
-          Databases – SQLite Ticket Tracker
-        </a>
-      </li>
-    </ul>
-
-    <div class="card">
-      <strong>Quick Downloads (if needed)</strong>
-      <ul>
-        <li>
-          SQLite DB Download:
-          <a href="https://raw.githubusercontent.com/sledesm9/cs499-eportfolio/main/Databases_SQLiteTicketTracker/tickets_enhanced.db" target="_blank" rel="noopener">
-            tickets_enhanced.db
-          </a>
-        </li>
-      </ul>
-      <p class="small">
-        Note: GitHub can’t “preview” .db files. Downloading is expected.
-      </p>
-    </div>
+    <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Software_Design_AnimalShelter" target="_blank">
+      View Software Design Artifact
+    </a>
   </div>
 
-  <hr />
-
-  <div class="section">
-    <h3>Code Review Video</h3>
-    <p class="small">
-      If this link fails, your YouTube video is still private or not saved as Unlisted/Public.
-      Go to YouTube Studio → set Visibility to <strong>Unlisted</strong> → click <strong>Save</strong>.
+  <!-- Algorithms -->
+  <div class="card">
+    <h4>Algorithms & Data Structures – Course Planner (C++)</h4>
+    <p>
+      The Course Planner application was originally designed to load and display
+      course data from a CSV file. I enhanced this project by refining the data
+      structures and improving search efficiency. These changes reduced unnecessary
+      processing and made the program more scalable while maintaining clarity
+      in the code design.
     </p>
-
-    <div class="card">
-      <a href="https://www.youtube.com/watch?v=K_BtlOpKeXc" target="_blank" rel="noopener">
-        Watch Code Review Video (YouTube)
-      </a>
-    </div>
+    <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Algorithms_CoursePlanner" target="_blank">
+      View Algorithms Artifact
+    </a>
   </div>
 
-</body>
-</html>
+  <!-- Databases -->
+  <div class="card">
+    <h4>Databases – SQLite Ticket Tracker</h4>
+    <p>
+      This database project tracks support tickets and resolution times using SQLite.
+      I enhanced the schema by adding constraints, validation checks, and indexed
+      queries to improve performance and data integrity. These improvements make
+      the system more reliable and better aligned with real-world database practices.
+    </p>
+    <a href="https://github.com/sledesm9/cs499-eportfolio/tree/main/Databases_SQLiteTicketTracker" target="_blank">
+      View Database Artifact
+    </a>
+  </div>
+
+</div>
