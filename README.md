@@ -64,7 +64,7 @@ cursor.execute("INSERT INTO tickets VALUES (?, ?, ?)", values)
 
 You can view my informal code review here:
 
-[Insert YouTube Link Here]
+https://youtu.be/K_BtlOpKeXc
 
 ---
 
