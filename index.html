@@ -8,9 +8,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      background: #f4f6f9;
+      margin: 0;
       line-height: 1.6;
       color: #111;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
 
     h1 {
@@ -23,10 +33,14 @@
       font-size: 28px;
     }
 
+    h3 {
+      margin-top: 0;
+    }
+
     .subtitle {
       font-size: 18px;
       margin-bottom: 20px;
-      color: #333;
+      color: #444;
     }
 
     .card {
@@ -34,9 +48,8 @@
       border-radius: 14px;
       padding: 25px;
       margin: 20px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       background: #fff;
-      max-width: 900px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
 
     a {
@@ -64,100 +77,103 @@
 
 <body>
 
-  <h1>Stevan Ledesma</h1>
-  <div class="subtitle">CS 499 Computer Science Capstone</div>
+  <div class="container">
 
-  <p>
-    Welcome to my professional ePortfolio. This portfolio highlights my growth throughout
-    the Computer Science program and demonstrates enhancements in software design,
-    algorithms and data structures, and database development.
-  </p>
+    <h1>Stevan Ledesma</h1>
+    <div class="subtitle">CS 499 Computer Science Capstone</div>
 
-  <hr>
-
-  <!-- Professional Self-Assessment -->
-  <h2>Professional Self-Assessment</h2>
-
-  <div class="card">
     <p>
-      In this self-assessment, I reflect on my academic journey, technical development,
-      collaboration experiences, and how my coursework and artifact enhancements
-      have prepared me for a career in software development.
+      Welcome to my professional ePortfolio. This portfolio highlights my growth throughout
+      the Computer Science program and demonstrates enhancements in software design,
+      algorithms and data structures, and database development.
     </p>
 
-    <!-- FIXED LINK -->
-    <a class="btn" href="self-assessment.html">
-      View Professional Self-Assessment
-    </a>
-  </div>
+    <hr>
 
-  <hr>
+    <!-- Professional Self-Assessment -->
+    <h2>Professional Self-Assessment</h2>
 
-  <!-- Artifacts Section -->
-  <h2>Artifacts</h2>
+    <div class="card">
+      <p>
+        In this self-assessment, I reflect on my academic journey, technical development,
+        collaboration experiences, and how my coursework and artifact enhancements
+        have prepared me for a career in software development.
+      </p>
 
-  <!-- Software Design -->
-  <div class="card">
-    <h3>Software Design – Animal Shelter (MongoDB)</h3>
-    <p>
-      This project began as a CRUD module connected to a MongoDB database for managing
-      animal rescue records. I enhanced the structure by organizing responsibilities more
-      clearly within the class, improving error handling, removing hardcoded credentials,
-      and replacing print statements with structured logging.
-      These changes improved maintainability, security, and overall professionalism.
-    </p>
+      <a class="btn" href="self-assessment.html">
+        View Professional Self-Assessment
+      </a>
+    </div>
 
-    <a class="btn" href="software-design.html">
-      View Software Design Artifact
-    </a>
-  </div>
+    <hr>
 
-  <!-- Algorithms -->
-  <div class="card">
-    <h3>Algorithms & Data Structures – Course Planner (C++)</h3>
-    <p>
-      The Course Planner application reads course information from a CSV file and allows
-      users to search for courses and view prerequisites. I enhanced this project by refining
-      parsing logic, improving input validation, and implementing a map data structure to
-      automatically maintain alphabetical order.
-      These updates improved efficiency, readability, and reliability.
-    </p>
+    <!-- Artifacts Section -->
+    <h2>Artifacts</h2>
 
-    <a class="btn" href="algorithms.html">
-      View Algorithms Artifact
-    </a>
-  </div>
+    <!-- Software Design -->
+    <div class="card">
+      <h3>Software Design – Animal Shelter (MongoDB)</h3>
+      <p>
+        This project began as a CRUD module connected to a MongoDB database for managing
+        animal rescue records. I enhanced the structure by organizing responsibilities more
+        clearly within the class, improving error handling, removing hardcoded credentials,
+        and replacing print statements with structured logging.
+        These changes improved maintainability, security, and overall professionalism.
+      </p>
 
-  <!-- Databases -->
-  <div class="card">
-    <h3>Databases – SQLite Ticket Tracker</h3>
-    <p>
-      This artifact is a support ticket tracking system built with Python and SQLite.
-      I enhanced the database schema by adding constraints, indexed fields, and
-      parameterized queries to protect data integrity and improve performance.
-      I also implemented reporting queries to generate meaningful summaries.
-    </p>
+      <a class="btn" href="software-design.html">
+        View Software Design Artifact
+      </a>
+    </div>
 
-    <a class="btn" href="databases.html">
-      View Database Artifact
-    </a>
-  </div>
+    <!-- Algorithms -->
+    <div class="card">
+      <h3>Algorithms & Data Structures – Course Planner (C++)</h3>
+      <p>
+        The Course Planner application reads course information from a CSV file and allows
+        users to search for courses and view prerequisites. I enhanced this project by refining
+        parsing logic, improving input validation, and implementing a map data structure to
+        automatically maintain alphabetical order.
+        These updates improved efficiency, readability, and reliability.
+      </p>
 
-  <hr>
+      <a class="btn" href="algorithms.html">
+        View Algorithms Artifact
+      </a>
+    </div>
 
-  <!-- Code Review Video -->
-  <h2>Code Review Video</h2>
+    <!-- Databases -->
+    <div class="card">
+      <h3>Databases – SQLite Ticket Tracker</h3>
+      <p>
+        This artifact is a support ticket tracking system built with Python and SQLite.
+        I enhanced the database schema by adding constraints, indexed fields, and
+        parameterized queries to protect data integrity and improve performance.
+        I also implemented reporting queries to generate meaningful summaries.
+      </p>
 
-  <div class="card">
-    <p>
-      This video provides a walkthrough of the original artifacts, discusses areas
-      for improvement, and explains how the enhancements were implemented across
-      software design, algorithms, and database systems.
-    </p>
+      <a class="btn" href="databases.html">
+        View Database Artifact
+      </a>
+    </div>
 
-    <a class="btn" href="https://youtu.be/K_BtlOpKeXc" target="_blank">
-      Watch Code Review Video
-    </a>
+    <hr>
+
+    <!-- Code Review Video -->
+    <h2>Code Review Video</h2>
+
+    <div class="card">
+      <p>
+        This video provides a walkthrough of the original artifacts, discusses areas
+        for improvement, and explains how the enhancements were implemented across
+        software design, algorithms, and database systems.
+      </p>
+
+      <a class="btn" href="https://youtu.be/K_BtlOpKeXc" target="_blank">
+        Watch Code Review Video
+      </a>
+    </div>
+
   </div>
 
 </body>
